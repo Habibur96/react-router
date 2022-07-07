@@ -11,6 +11,7 @@ import Friends from './components/Friends/Friends'
 import About from './components/About/About'
 import NotFound from './components/NotFound/NotFound';
 import Header from './components/Header/Header';
+import FriendDetail from './components/FriendDetail/FriendDetail';
 
 
 
@@ -26,6 +27,8 @@ function App() {
         <Route path="/Friends" element={<Friends></Friends>}></Route>
 
         <Route path="/About" element={<About></About>}></Route>
+
+        <Route path="/Friend/:FriendId" element={<FriendDetail></FriendDetail>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes >
     </div >
