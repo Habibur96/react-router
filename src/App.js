@@ -14,6 +14,9 @@ import Header from './components/Header/Header';
 import FriendDetail from './components/FriendDetail/FriendDetail';
 import Posts from './components/Posts/Posts';
 import PostDetail from './components/PostDetail/PostDetail';
+import Country from './components/Country/Country';
+import CountryDetails from './components/CountryDetails/CountryDetails';
+import Countries from './components/Countries/Countries';
 
 
 
@@ -39,7 +42,8 @@ function App() {
         {/* ==================== Nexted End =================== */}
 
         <Route path="/About" element={<About></About>}></Route>
-
+        <Route path='/Countries' element={<Countries></Countries>}></Route>
+        <Route path='/country/:countryName' element={<CountryDetails></CountryDetails>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes >
     </div >
