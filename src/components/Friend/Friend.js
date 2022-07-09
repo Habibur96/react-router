@@ -13,7 +13,7 @@ const Friend = (props) => {
         <div>
 
             <h2>Name: {name}</h2>
-            {/*Commant:- We can use it using click handaler and also <Link><Link/>. If we use button we have to use navigate. */}
+            {/*Commant:- We can use it using click handaler and also <Link><Link/>. If we use button we have to use navigate.*/}
 
             <Link to={'/Friend/' + id}>Show Detail</Link>
 
