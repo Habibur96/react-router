@@ -42,7 +42,7 @@ function App() {
         <Route path="/About" element={<About></About>}></Route>
         <Route path='/Countries' element={<Countries></Countries>}></Route>
 
-        <Route path='/country/:countryName'><CountryDetails></CountryDetails></Route>
+        <Route path='/country/:countryName' element={<CountryDetails></CountryDetails>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes >
     </div >
